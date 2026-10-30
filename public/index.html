@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b1b">
+  <meta name="description" content="A live countdown to the New Year. Make every second count.">
+  <title>Midnight — New Year's Eve Countdown</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/countdown.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <main class="stage">
+    <div class="topline"><span class="live-dot"></span> THE FINAL COUNTDOWN <span class="top-year">2026 → 2027</span></div>
+    <section class="hero" aria-labelledby="headline">
+      <p class="eyebrow">A NEW BEGINNING IS JUST AROUND THE CORNER</p>
+      <h1 id="headline">Make it <span>count.</span></h1>
+      <p class="intro">Every second brings us closer to a fresh start.</p>
+      <div class="countdown" role="timer" aria-label="Time remaining until 2027" aria-live="off">
+        <div class="time-unit"><div class="number-wrap"><span id="days" class="number">00</span></div><span class="unit-label">DAYS</span></div>
+        <span class="separator">:</span>
+        <div class="time-unit"><div class="number-wrap"><span id="hours" class="number">00</span></div><span class="unit-label">HOURS</span></div>
+        <span class="separator">:</span>
+        <div class="time-unit"><div class="number-wrap"><span id="minutes" class="number">00</span></div><span class="unit-label">MINUTES</span></div>
+        <span class="separator">:</span>
+        <div class="time-unit"><div class="number-wrap"><span id="seconds" class="number">00</span></div><span class="unit-label">SECONDS</span></div>
+      </div>
+      <div class="target-date"><span class="sparkle">✦</span> MIDNIGHT · JANUARY 1, 2027 <span class="sparkle">✦</span></div>
+      <div id="celebration" class="celebration" hidden>HAPPY NEW YEAR! <span>✦</span></div>
+    </section>
+    <footer><span>✧</span> Here's to new chapters, big dreams & little moments. <span>✧</span></footer>
+  </main>
+  <div class="grain" aria-hidden="true"></div>
+</body>
+</html>
